@@ -1,12 +1,12 @@
-const NUMBER = (value) =>
+const number = (value) =>
   value && isNaN(Number(value)) ? "Campo numérico" : undefined;
 
-const EMAIL = (value) =>
+const email = (value) =>
   value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)
     ? "Endereço de e-mail inválido"
     : undefined;
 
-const FULLNAME = (value) =>
+const fullname = (value) =>
   value &&
   /^[a-zãâáàêéèíìîòóôõúùûüç]{1,}(?:\s+[a-zãâáàêéèíìîòóôõúùûüç]{1,})+/i.test(
     value
@@ -14,16 +14,14 @@ const FULLNAME = (value) =>
     ? undefined
     : "Preencha com o nome completo";
 
-const PHONE = (value) =>
+const phone = (value) =>
   value && !/^(0|[1-9][0-9]{9})$/i.test(value)
     ? "Telefone inválido"
     : undefined;
 
-
-
 module.export = {
-  isNumber: NUMBER,
-  isEmail: EMAIL,
-  fullName: FULLNAME,
-  isFone: PHONE
+  isNumber: number,
+  isEmail: email,
+  fullName: fullname,
+  isFone: phone,
 };
