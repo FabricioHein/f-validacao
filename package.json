@@ -1,20 +1,20 @@
 {
-  "name": "f-validacao",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "f-validar",
+  "version": "1.0.1",
+  "description": "Biblioteca criada para validação de dados como cpf, rg, telefone, nome completo",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fabricio Fonseca Pereira Hein <fabricio.hein@live.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FabricioHein/validacao.git"
+    "url": "git+https://github.com/FabricioHein/f-validacao.git"
   },
   "keywords": [],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FabricioHein/validacao/issues"
+    "url": "https://github.com/FabricioHein/f-validacao/issues"
   },
   "homepage": "https://github.com/FabricioHein/validacao#readme"
 }
